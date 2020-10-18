@@ -20,7 +20,7 @@ var locations = /** @class */ (function () {
         array.push(this);
     }
     locations.prototype.render = function () {
-        return "<div class=\"card col-md-6 col-lg-3 border bg-light\">\n        <img class=\"card-img-top p-2\" src=\"" + this.image + "\">\n        <div class=\"card-body\">\n            <h5 class=\"card-title\">Name: " + this.name + "</h5>\n            <p class=\"card-text\">City: " + this.address + "</p>\n        </div>\n        \n    </div>";
+        return "<div class=\"card col-md-6 col-lg-3 border bg-light mb-5\">\n        <img class=\"card-img-top p-2\" src=\"" + this.image + "\">\n        <div class=\"card-body\">\n            <h5 class=\"card-title\">Name: " + this.name + "</h5>\n            <p class=\"card-text\">City: " + this.address + "</p>\n        </div>\n        \n    </div>";
     };
     return locations;
 }());
@@ -32,7 +32,7 @@ var restaurant = /** @class */ (function (_super) {
         return _this;
     }
     restaurant.prototype.render = function () {
-        return "\n<div class=\"card col-md-6 col-lg-3 border bg-light\">\n        <img class=\"card-img-top p-2\" src=\"" + this.image + "\">\n        <div class=\"card-body\">\n            <h5 class=\"card-title\">Name: " + this.name + "</h5>\n            <p class=\"card-text\">Address: " + this.address + "</p>\n            <p><a href=\"" + this.site + "\">" + this.site + "</a></p>\n        </div>\n       \n</div>\n    ";
+        return "\n<div class=\"card col-md-6 col-lg-3 border bg-light mb-5\">\n        <img class=\"card-img-top p-2\" src=\"" + this.image + "\">\n        <div class=\"card-body\">\n            <h5 class=\"card-title\">Name: " + this.name + "</h5>\n            <p class=\"card-text\">Address: " + this.address + "</p>\n            <p><a href=\"" + this.site + "\">" + this.site + "</a></p>\n        </div>\n       \n</div>\n    ";
     };
     return restaurant;
 }(locations));
@@ -53,8 +53,8 @@ var events = /** @class */ (function (_super) {
 }(locations));
 new locations('St. Charles Church', 'Karlsplatz 1, 1010 Vienna', 'img/1.jpg');
 new locations('Zoo Vienna', 'Maxingstraße 13b, 1130 Wien', 'img/2.jpg');
-new restaurant('Lemon Leaf Thai Restaurant', 'Kettenbrückengasse 19, 1050 Vienna, +43(1)5812308', 'img/3.jpg', 'www.lemonleaf.at');
-new restaurant('SIXTA', '1050 Wien, Schönbrunner Straße 21 ,  +43 1 58 528 56', 'img/4.jpg', 'http://www.sixta-restaurant.at/');
+new restaurant('Lemon Leaf Thai Restaurant', 'Kettenbrückengasse 19, 1050 Vienna, +43(1)5812308', 'img/3.png', 'www.lemonleaf.at');
+new restaurant('SIXTA', '1050 Wien, Schönbrunner Straße 21 ,  +43 1 58 528 56', 'img/4.png', 'http://www.sixta-restaurant.at/');
 new events('Kris Kristofferson', 'Wiener Stadthalle,1150 Wien', 'img/5.jpg', '15.11.2021', '22:00', '58', 'http://kriskristofferson.com/');
 new events('Lenny Kravitz', 'Wiener Stadthalle - Halle D, Roland Rainer Platz 1, 1150 Wien', 'img/6.jpg', '09.12.2029', '22:00', '47', 'www.lennykravitz.com/');
 for (var x in array) {
